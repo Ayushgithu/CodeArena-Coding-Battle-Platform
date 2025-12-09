@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  
+  /* 🎨 Core Colors */
+  --color-bg: #0a0f1c;         /* Deep navy background */
+  --color-surface: #111827;    /* Surface / Card background */
+  --color-text: #f9fafb;       /* Main text */
+  --color-muted: #9ca3af;      /* Muted text */
+
+  /* 🚀 Accents */
+  --color-primary: #3b82f6;    /* Blue glow */
+  --color-secondary: #8b5cf6;  /* Purple accent */
+  --color-success: #10b981;    /* Emerald for highlights */
+
+  /* 🧠 Fonts */
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Orbitron", sans-serif;
+
+  /* 🧱 Rounded & Shadows */
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  --shadow-soft: 0 0 20px rgba(59, 130, 246, 0.1);
+  --shadow-strong: 0 0 30px rgba(139, 92, 246, 0.25);
+}
+/* Remove built-in eye icons in password fields */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none !important;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-clear-button {
+  display: none !important;
+}
+
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none !important;
+}
+input[type="password"]::-webkit-inner-spin-button {
+  display: none !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide arrows in number input (Firefox) */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE + Edge */
+  scrollbar-width: none;     /* Firefox */
+}
