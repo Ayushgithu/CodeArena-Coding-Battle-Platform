@@ -1,0 +1,919 @@
+[
+  {
+    "title": "Print Hello World",
+    "description": "Write a program that prints 'Hello World' to the console.",
+    "inputFormat": "No input",
+    "outputFormat": "Hello World",
+    "constraints": "None",
+    "difficulty": "EASY",
+    "points": 10,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["Basics", "Introduction"],
+    "testCases": [
+      {
+        "inputData": "",
+        "expectedOutput": "Hello World",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Basic Hello World output"
+      }
+    ],
+    "starterCodes": [
+      {
+        "language": "python",
+        "version": "3.10.0",
+        "codeTemplate": "def main():\n    print('')  # Fill in your code here\n\nif __name__ == '__main__':\n    main()"
+      },
+      {
+        "language": "cpp",
+        "version": "10.2.0",
+        "codeTemplate": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"\"; // Fill in your code here\n    return 0;\n}"
+      },
+      {
+        "language": "java",
+        "version": "17.0.0",
+        "codeTemplate": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"\"); // Fill in your code here\n    }\n}"
+      },
+      {
+        "language": "javascript",
+        "version": "18.0.0",
+        "codeTemplate": "function main() {\n  console.log(''); // Fill in your code here\n}\n\nmain();"
+      }
+    ]
+  },
+
+    {
+      "title":"Even or Odd",
+      "description":"Check whether a given integer is even or odd.",
+      "inputFormat":"A single integer N.",
+      "outputFormat":"Print 'EVEN' or 'ODD'.",
+      "constraints":"-10^9 <= N <= 10^9",
+      "difficulty":"EASY",
+      "points":10,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["Math","Basics"],
+      "testCases":[
+        {"inputData":"4","expectedOutput":"EVEN","isSample":true,"orderIndex":1,"explanation":"4 is divisible by 2"},
+        {"inputData":"7","expectedOutput":"ODD","isSample":false,"orderIndex":2,"explanation":"7 is not divisible by 2"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n n=int(input())\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int n=sc.nextInt();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let n=parseInt(fs.readFileSync(0,'utf8'));}main();"}]
+    },
+
+    {
+      "title":"Maximum of Two Numbers",
+      "description":"Find the maximum of two integers.",
+      "inputFormat":"Two integers separated by space.",
+      "outputFormat":"Print the maximum value.",
+      "constraints":"-10^9 <= a,b <= 10^9",
+      "difficulty":"EASY",
+      "points":10,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["Math"],
+      "testCases":[
+        {"inputData":"3 8","expectedOutput":"8","isSample":true,"orderIndex":1,"explanation":"8 is greater"},
+        {"inputData":"5 1","expectedOutput":"5","isSample":false,"orderIndex":2,"explanation":"5 is greater"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n a,b=map(int,input().split())\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int a,b;cin>>a>>b;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int a=sc.nextInt(),b=sc.nextInt();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let [a,b]=fs.readFileSync(0,'utf8').trim().split(' ').map(Number);}main();"}]
+    },
+
+    {
+      "title":"Sum of Digits",
+      "description":"Find the sum of digits of a number.",
+      "inputFormat":"Single integer N.",
+      "outputFormat":"Sum of digits.",
+      "constraints":"0 <= N <= 10^9",
+      "difficulty":"EASY",
+      "points":10,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["Math"],
+      "testCases":[
+        {"inputData":"123","expectedOutput":"6","isSample":true,"orderIndex":1,"explanation":"1+2+3=6"},
+        {"inputData":"100","expectedOutput":"1","isSample":false,"orderIndex":2,"explanation":"1+0+0=1"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n n=input()\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int n=sc.nextInt();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let n=fs.readFileSync(0,'utf8').trim();}main();"}]
+    },
+
+    {
+      "title":"Count Characters",
+      "description":"Count number of characters in string.",
+      "inputFormat":"Single string.",
+      "outputFormat":"Length of string.",
+      "constraints":"1 <= length <= 10^5",
+      "difficulty":"EASY",
+      "points":10,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["String"],
+      "testCases":[
+        {"inputData":"hello","expectedOutput":"5","isSample":true,"orderIndex":1,"explanation":"Length is 5"},
+        {"inputData":"CodeArena","expectedOutput":"9","isSample":false,"orderIndex":2,"explanation":"9 characters"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n s=input()\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){string s;cin>>s;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);String s=sc.next();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let s=fs.readFileSync(0,'utf8').trim();}main();"}]
+    },
+
+    {
+      "title":"Print N Times",
+      "description":"Print 'CodeArena' N times.",
+      "inputFormat":"Single integer N.",
+      "outputFormat":"Print CodeArena N times in new lines.",
+      "constraints":"1<=N<=100",
+      "difficulty":"EASY",
+      "points":10,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["Loop"],
+      "testCases":[
+        {"inputData":"3","expectedOutput":"CodeArena\nCodeArena\nCodeArena","isSample":true,"orderIndex":1,"explanation":"Printed 3 times"},
+        {"inputData":"1","expectedOutput":"CodeArena","isSample":false,"orderIndex":2,"explanation":"Printed once"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n n=int(input())\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int n=sc.nextInt();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let n=parseInt(fs.readFileSync(0,'utf8'));}main();"}]
+    }
+  ,
+
+    {
+      "title":"Square of a Number",
+      "description":"Calculate the square of a given integer.",
+      "inputFormat":"Single integer N.",
+      "outputFormat":"Print N squared.",
+      "constraints":"-10^5 <= N <= 10^5",
+      "difficulty":"EASY",
+      "points":10,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["Math"],
+      "testCases":[
+        {"inputData":"5","expectedOutput":"25","isSample":true,"orderIndex":1,"explanation":"5*5 = 25"},
+        {"inputData":"-4","expectedOutput":"16","isSample":false,"orderIndex":2,"explanation":"(-4)*(-4)=16"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n n=int(input())\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int n=sc.nextInt();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let n=parseInt(fs.readFileSync(0,'utf8'));}main();"}]
+    },
+
+    {
+      "title":"Convert Celsius to Fahrenheit",
+      "description":"Convert temperature from Celsius to Fahrenheit.",
+      "inputFormat":"Single integer C.",
+      "outputFormat":"Temperature in Fahrenheit.",
+      "constraints":"-100 <= C <= 100",
+      "difficulty":"EASY",
+      "points":10,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["Math"],
+      "testCases":[
+        {"inputData":"0","expectedOutput":"32","isSample":true,"orderIndex":1,"explanation":"(0*9/5)+32 = 32"},
+        {"inputData":"25","expectedOutput":"77","isSample":false,"orderIndex":2,"explanation":"(25*9/5)+32 = 77"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n c=int(input())\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int c;cin>>c;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int c=sc.nextInt();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let c=parseInt(fs.readFileSync(0,'utf8'));}main();"}]
+    },
+
+    {
+      "title":"Count Even Numbers",
+      "description":"Count total even numbers in given list.",
+      "inputFormat":"First line N. Second line N integers.",
+      "outputFormat":"Count of even numbers.",
+      "constraints":"1 <= N <= 10^5",
+      "difficulty":"EASY",
+      "points":15,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["Array","Loop"],
+      "testCases":[
+        {"inputData":"5\n1 2 3 4 6","expectedOutput":"3","isSample":true,"orderIndex":1,"explanation":"2,4,6 are even"},
+        {"inputData":"3\n1 3 5","expectedOutput":"0","isSample":false,"orderIndex":2,"explanation":"No even numbers"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n n=int(input())\n arr=list(map(int,input().split()))\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);for(int&i:a)cin>>i;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let data=fs.readFileSync(0,'utf8').trim().split(/\\s+/);}main();"}]
+    },
+
+    {
+      "title":"Reverse a String",
+      "description":"Reverse the given string.",
+      "inputFormat":"Single string.",
+      "outputFormat":"Reversed string.",
+      "constraints":"1 <= length <= 10^5",
+      "difficulty":"EASY",
+      "points":15,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["String"],
+      "testCases":[
+        {"inputData":"hello","expectedOutput":"olleh","isSample":true,"orderIndex":1,"explanation":"Reverse order"},
+        {"inputData":"arena","expectedOutput":"anera","isSample":false,"orderIndex":2,"explanation":"String reversed"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n s=input()\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){string s;cin>>s;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);String s=sc.next();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let s=fs.readFileSync(0,'utf8').trim();}main();"}]
+    },
+
+    {
+      "title":"Find Minimum in Array",
+      "description":"Find the smallest element in the array.",
+      "inputFormat":"First line N. Second line array elements.",
+      "outputFormat":"Minimum value.",
+      "constraints":"1<=N<=10^5",
+      "difficulty":"EASY",
+      "points":15,
+      "timeLimit":1.0,
+      "memoryLimit":128,
+      "tags":["Array"],
+      "testCases":[
+        {"inputData":"5\n3 7 1 9 4","expectedOutput":"1","isSample":true,"orderIndex":1,"explanation":"1 is smallest"},
+        {"inputData":"3\n10 20 30","expectedOutput":"10","isSample":false,"orderIndex":2,"explanation":"10 is minimum"}
+      ],
+      "starterCodes":[
+        {"language":"python","version":"3.10.0","codeTemplate":"def main():\n n=int(input())\n arr=list(map(int,input().split()))\n\nif __name__=='__main__':main()"},
+        {"language":"cpp","version":"10.2.0","codeTemplate":"#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);for(int&i:a)cin>>i;return 0;}"},
+        {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();}}"},
+        {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let data=fs.readFileSync(0,'utf8').trim().split(/\\s+/);}main();"}]
+    }
+  ,
+  {
+    "title":"Add Two Numbers",
+    "description":"Read two integers and print their sum.",
+    "inputFormat":"Two space separated integers.",
+    "outputFormat":"Single integer sum.",
+    "constraints":"-10^6 <= a,b <= 10^6",
+    "difficulty":"EASY",
+    "points":10,
+    "timeLimit":1.0,
+    "memoryLimit":128,
+    "tags":["Math","Beginner"],
+    "testCases":[
+      {"inputData":"2 3","expectedOutput":"5","isSample":true,"orderIndex":1,"explanation":"2+3=5"},
+      {"inputData":"-5 10","expectedOutput":"5","isSample":false,"orderIndex":2,"explanation":"-5+10=5"}
+    ],
+    "starterCodes":[
+      {"language":"python","version":"3.10.0","codeTemplate":"def main():\n a,b=map(int,input().split())\n\nif __name__=='__main__':main()"},
+      {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int a,b;cin>>a>>b;return 0;}"},
+      {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int a=sc.nextInt(),b=sc.nextInt();}}"},
+      {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let [a,b]=fs.readFileSync(0,'utf8').trim().split(' ').map(Number);}main();"}]
+  },
+
+  {
+    "title":"Multiply Two Numbers",
+    "description":"Read two integers and print their product.",
+    "inputFormat":"Two space separated integers.",
+    "outputFormat":"Single integer result.",
+    "constraints":"-10^5 <= a,b <= 10^5",
+    "difficulty":"EASY",
+    "points":10,
+    "timeLimit":1.0,
+    "memoryLimit":128,
+    "tags":["Math"],
+    "testCases":[
+      {"inputData":"4 5","expectedOutput":"20","isSample":true,"orderIndex":1,"explanation":"4*5=20"},
+      {"inputData":"-2 6","expectedOutput":"-12","isSample":false,"orderIndex":2,"explanation":"-2*6=-12"}
+    ],
+    "starterCodes":[
+      {"language":"python","version":"3.10.0","codeTemplate":"def main():\n a,b=map(int,input().split())\n\nif __name__=='__main__':main()"},
+      {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int a,b;cin>>a>>b;return 0;}"},
+      {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int a=sc.nextInt(),b=sc.nextInt();}}"},
+      {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let [a,b]=fs.readFileSync(0,'utf8').trim().split(' ').map(Number);}main();"}]
+  },
+
+  {
+    "title":"Check Positive or Negative",
+    "description":"Check whether number is positive, negative or zero.",
+    "inputFormat":"Single integer.",
+    "outputFormat":"POSITIVE, NEGATIVE or ZERO.",
+    "constraints":"-10^9 <= N <= 10^9",
+    "difficulty":"EASY",
+    "points":10,
+    "timeLimit":1.0,
+    "memoryLimit":128,
+    "tags":["Condition"],
+    "testCases":[
+      {"inputData":"5","expectedOutput":"POSITIVE","isSample":true,"orderIndex":1,"explanation":"Greater than zero"},
+      {"inputData":"-7","expectedOutput":"NEGATIVE","isSample":false,"orderIndex":2,"explanation":"Less than zero"},
+      {"inputData":"0","expectedOutput":"ZERO","isSample":false,"orderIndex":3,"explanation":"Equal to zero"}
+    ],
+    "starterCodes":[
+      {"language":"python","version":"3.10.0","codeTemplate":"def main():\n n=int(input())\n\nif __name__=='__main__':main()"},
+      {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;return 0;}"},
+      {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int n=sc.nextInt();}}"},
+      {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let n=parseInt(fs.readFileSync(0,'utf8'));}main();"}]
+  },
+
+  {
+    "title":"Count Words",
+    "description":"Count number of words in a sentence.",
+    "inputFormat":"Single line string.",
+    "outputFormat":"Word count.",
+    "constraints":"1 <= length <= 10^5",
+    "difficulty":"EASY",
+    "points":15,
+    "timeLimit":1.0,
+    "memoryLimit":128,
+    "tags":["String"],
+    "testCases":[
+      {"inputData":"Hello World","expectedOutput":"2","isSample":true,"orderIndex":1,"explanation":"Two words"},
+      {"inputData":"Code Arena Platform","expectedOutput":"3","isSample":false,"orderIndex":2,"explanation":"Three words"}
+    ],
+    "starterCodes":[
+      {"language":"python","version":"3.10.0","codeTemplate":"def main():\n s=input()\n\nif __name__=='__main__':main()"},
+      {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\n#include<string>\nusing namespace std;\nint main(){string s;getline(cin,s);return 0;}"},
+      {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);String s=sc.nextLine();}}"},
+      {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let s=fs.readFileSync(0,'utf8').trim();}main();"}]
+  },
+
+  {
+    "title":"Print Table",
+    "description":"Print multiplication table of a number from 1 to 10.",
+    "inputFormat":"Single integer N.",
+    "outputFormat":"10 lines of multiplication table.",
+    "constraints":"1 <= N <= 100",
+    "difficulty":"EASY",
+    "points":15,
+    "timeLimit":1.0,
+    "memoryLimit":128,
+    "tags":["Loop"],
+    "testCases":[
+      {"inputData":"2","expectedOutput":"2 4 6 8 10 12 14 16 18 20","isSample":true,"orderIndex":1,"explanation":"Table of 2"},
+      {"inputData":"1","expectedOutput":"1 2 3 4 5 6 7 8 9 10","isSample":false,"orderIndex":2,"explanation":"Table of 1"}
+    ],
+    "starterCodes":[
+      {"language":"python","version":"3.10.0","codeTemplate":"def main():\n n=int(input())\n\nif __name__=='__main__':main()"},
+      {"language":"cpp","version":"10.2.0","codeTemplate":"#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;return 0;}"},
+      {"language":"java","version":"17.0.0","codeTemplate":"public class Main{public static void main(String[] args){java.util.Scanner sc=new java.util.Scanner(System.in);int n=sc.nextInt();}}"},
+      {"language":"javascript","version":"18.0.0","codeTemplate":"function main(){const fs=require('fs');let n=parseInt(fs.readFileSync(0,'utf8'));}main();"}]
+  },
+  {
+    "title": "Reverse a String",
+    "description": "Reverse the given string.",
+    "inputFormat": "A single string S.",
+    "outputFormat": "Reversed string.",
+    "constraints": "1 ≤ length of S ≤ 10^5",
+    "difficulty": "MEDIUM",
+    "points": 20,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["String", "Two Pointer"],
+    "testCases": [
+      {
+        "inputData": "hello",
+        "expectedOutput": "olleh",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Reverse characters"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "s=input()\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){string s;cin>>s;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);String s=sc.next();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const s=require('fs').readFileSync(0,'utf8').trim();console.log('');" }
+    ]
+  },
+  {
+    "title": "Check Palindrome Number",
+    "description": "Check if given integer is palindrome.",
+    "inputFormat": "Single integer N.",
+    "outputFormat": "true or false.",
+    "constraints": "-10^9 ≤ N ≤ 10^9",
+    "difficulty": "MEDIUM",
+    "points": 20,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["Math", "String"],
+    "testCases": [
+      {
+        "inputData": "121",
+        "expectedOutput": "true",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "121 reversed is same"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=input()\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){string n;cin>>n;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);String n=sc.next();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const n=require('fs').readFileSync(0,'utf8').trim();console.log('');" }
+    ]
+  },
+  {
+    "title": "Count Vowels",
+    "description": "Count vowels in given string.",
+    "inputFormat": "Single string.",
+    "outputFormat": "Number of vowels.",
+    "constraints": "Length ≤ 10^5",
+    "difficulty": "MEDIUM",
+    "points": 20,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["String"],
+    "testCases": [
+      {
+        "inputData": "education",
+        "expectedOutput": "5",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Count a,e,i,o,u"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "s=input()\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){string s;cin>>s;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);String s=sc.next();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const s=require('fs').readFileSync(0,'utf8').trim();console.log('');" }
+    ]
+  },
+  {
+    "title": "Find Second Largest",
+    "description": "Find second largest element in array.",
+    "inputFormat": "N then array elements.",
+    "outputFormat": "Second largest number.",
+    "constraints": "2 ≤ N ≤ 10^5",
+    "difficulty": "MEDIUM",
+    "points": 25,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["Array"],
+    "testCases": [
+      {
+        "inputData": "5\n1 3 4 2 5",
+        "expectedOutput": "4",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Second max is 4"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;int a[n];for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Fibonacci Series",
+    "description": "Print first N Fibonacci numbers.",
+    "inputFormat": "Integer N.",
+    "outputFormat": "Fibonacci series space separated.",
+    "constraints": "1 ≤ N ≤ 50",
+    "difficulty": "MEDIUM",
+    "points": 25,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["DP"],
+    "testCases": [
+      {
+        "inputData": "5",
+        "expectedOutput": "0 1 1 2 3",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Generate Fibonacci"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const n=parseInt(require('fs').readFileSync(0,'utf8'));console.log('');" }
+    ]
+  },
+  {
+    "title": "Sum of Digits",
+    "description": "Calculate the sum of digits of a given integer.",
+    "inputFormat": "Single integer N.",
+    "outputFormat": "Sum of digits.",
+    "constraints": "0 ≤ N ≤ 10^18",
+    "difficulty": "MEDIUM",
+    "points": 20,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["Math"],
+    "testCases": [
+      {
+        "inputData": "12345",
+        "expectedOutput": "15",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "1+2+3+4+5 = 15"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=input()\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){string n;cin>>n;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);String n=sc.next();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const n=require('fs').readFileSync(0,'utf8').trim();console.log('');" }
+    ]
+  },
+  {
+    "title": "Count Even Numbers",
+    "description": "Count number of even integers in given array.",
+    "inputFormat": "N followed by N integers.",
+    "outputFormat": "Count of even numbers.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "MEDIUM",
+    "points": 20,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["Array"],
+    "testCases": [
+      {
+        "inputData": "5\n1 2 3 4 6",
+        "expectedOutput": "3",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Even numbers are 2,4,6"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;int a[n];for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Remove Duplicates from Array",
+    "description": "Remove duplicate elements and print unique values.",
+    "inputFormat": "N followed by N integers.",
+    "outputFormat": "Unique elements space separated.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "MEDIUM",
+    "points": 25,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["Array", "Set"],
+    "testCases": [
+      {
+        "inputData": "6\n1 2 2 3 3 4",
+        "expectedOutput": "1 2 3 4",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Duplicates removed"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;int a[n];for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Check Anagram",
+    "description": "Check whether two strings are anagrams.",
+    "inputFormat": "Two strings S1 and S2.",
+    "outputFormat": "true or false.",
+    "constraints": "Length ≤ 10^5",
+    "difficulty": "MEDIUM",
+    "points": 25,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["String", "HashMap"],
+    "testCases": [
+      {
+        "inputData": "listen silent",
+        "expectedOutput": "true",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Same character frequency"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "s1,s2=input().split()\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){string a,b;cin>>a>>b;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);String a=sc.next();String b=sc.next();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Find Missing Number",
+    "description": "Find missing number from 1 to N.",
+    "inputFormat": "N followed by N-1 numbers.",
+    "outputFormat": "Missing number.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "MEDIUM",
+    "points": 25,
+    "timeLimit": 1.0,
+    "memoryLimit": 128,
+    "tags": ["Math", "Array"],
+    "testCases": [
+      {
+        "inputData": "5\n1 2 4 5",
+        "expectedOutput": "3",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "3 is missing"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<iostream>\nusing namespace std;\nint main(){int n;cin>>n;int a[n-1];for(int i=0;i<n-1;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n-1];for(int i=0;i<n-1;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Longest Subarray With Sum K",
+    "description": "Find the length of the longest subarray whose sum equals K.",
+    "inputFormat": "N and K followed by N integers.",
+    "outputFormat": "Length of longest subarray.",
+    "constraints": "1 ≤ N ≤ 10^5, -10^5 ≤ elements ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 40,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["Prefix Sum", "HashMap"],
+    "testCases": [
+      {
+        "inputData": "7 5\n1 2 3 -2 5 -3 2",
+        "expectedOutput": "4",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Subarray [2,3,-2,5] has sum 5"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n,k=map(int,input().split())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n,k;cin>>n>>k;vector<int>a(n);for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt(),k=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Next Greater Element",
+    "description": "Find the next greater element to the right for each array element.",
+    "inputFormat": "N followed by N integers.",
+    "outputFormat": "Next greater elements space separated, -1 if not exists.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 35,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["Stack"],
+    "testCases": [
+      {
+        "inputData": "4\n4 5 2 25",
+        "expectedOutput": "5 25 25 -1",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Use stack approach"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Search in Rotated Sorted Array",
+    "description": "Search target in rotated sorted array using O(log N).",
+    "inputFormat": "N followed by array and target value.",
+    "outputFormat": "Index of target or -1.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 40,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["Binary Search"],
+    "testCases": [
+      {
+        "inputData": "7\n4 5 6 7 0 1 2\n0",
+        "expectedOutput": "4",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Binary search on rotated array"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nt=int(input())\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);for(int i=0;i<n;i++)cin>>a[i];int t;cin>>t;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();int t=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Longest Valid Parentheses",
+    "description": "Find length of longest valid parentheses substring.",
+    "inputFormat": "Single string of '(' and ')'.",
+    "outputFormat": "Length of longest valid substring.",
+    "constraints": "Length ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 40,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["Stack", "DP"],
+    "testCases": [
+      {
+        "inputData": "(()())",
+        "expectedOutput": "6",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Whole string is valid"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "s=input()\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){string s;cin>>s;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);String s=sc.next();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const s=require('fs').readFileSync(0,'utf8').trim();console.log('');" }
+    ]
+  },
+  {
+    "title": "Maximum Product Subarray",
+    "description": "Find contiguous subarray with maximum product.",
+    "inputFormat": "N followed by N integers.",
+    "outputFormat": "Maximum product.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 40,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["DP"],
+    "testCases": [
+      {
+        "inputData": "5\n2 3 -2 4 -1",
+        "expectedOutput": "48",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Subarray [2,3,-2,4] gives max product"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Longest Subarray With Sum K",
+    "description": "Find the length of the longest subarray whose sum equals K.",
+    "inputFormat": "N and K followed by N integers.",
+    "outputFormat": "Length of longest subarray.",
+    "constraints": "1 ≤ N ≤ 10^5, -10^5 ≤ elements ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 40,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["Prefix Sum", "HashMap"],
+    "testCases": [
+      {
+        "inputData": "7 5\n1 2 3 -2 5 -3 2",
+        "expectedOutput": "4",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Subarray [2,3,-2,5] has sum 5"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n,k=map(int,input().split())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n,k;cin>>n>>k;vector<int>a(n);for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt(),k=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Next Greater Element",
+    "description": "Find the next greater element to the right for each array element.",
+    "inputFormat": "N followed by N integers.",
+    "outputFormat": "Next greater elements space separated, -1 if not exists.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 35,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["Stack"],
+    "testCases": [
+      {
+        "inputData": "4\n4 5 2 25",
+        "expectedOutput": "5 25 25 -1",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Use stack approach"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Search in Rotated Sorted Array",
+    "description": "Search target in rotated sorted array using O(log N).",
+    "inputFormat": "N followed by array and target value.",
+    "outputFormat": "Index of target or -1.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 40,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["Binary Search"],
+    "testCases": [
+      {
+        "inputData": "7\n4 5 6 7 0 1 2\n0",
+        "expectedOutput": "4",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Binary search on rotated array"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nt=int(input())\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);for(int i=0;i<n;i++)cin>>a[i];int t;cin>>t;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();int t=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  },
+  {
+    "title": "Longest Valid Parentheses",
+    "description": "Find length of longest valid parentheses substring.",
+    "inputFormat": "Single string of '(' and ')'.",
+    "outputFormat": "Length of longest valid substring.",
+    "constraints": "Length ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 40,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["Stack", "DP"],
+    "testCases": [
+      {
+        "inputData": "(()())",
+        "expectedOutput": "6",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Whole string is valid"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "s=input()\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){string s;cin>>s;cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);String s=sc.next();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const s=require('fs').readFileSync(0,'utf8').trim();console.log('');" }
+    ]
+  },
+  {
+    "title": "Maximum Product Subarray",
+    "description": "Find contiguous subarray with maximum product.",
+    "inputFormat": "N followed by N integers.",
+    "outputFormat": "Maximum product.",
+    "constraints": "1 ≤ N ≤ 10^5",
+    "difficulty": "HARD",
+    "points": 40,
+    "timeLimit": 1.0,
+    "memoryLimit": 256,
+    "tags": ["DP"],
+    "testCases": [
+      {
+        "inputData": "5\n2 3 -2 4 -1",
+        "expectedOutput": "48",
+        "isSample": true,
+        "orderIndex": 1,
+        "explanation": "Subarray [2,3,-2,4] gives max product"
+      }
+    ],
+    "starterCodes": [
+      { "language": "python", "version": "3.10.0", "codeTemplate": "n=int(input())\narr=list(map(int,input().split()))\nprint('')" },
+      { "language": "cpp", "version": "10.2.0", "codeTemplate": "#include<bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);for(int i=0;i<n;i++)cin>>a[i];cout<<\"\";}" },
+      { "language": "java", "version": "15.0.2", "codeTemplate": "import java.util.*;\npublic class Main{public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=sc.nextInt();System.out.println(\"\");}}" },
+      { "language": "javascript", "version": "18.15.0", "codeTemplate": "const input=require('fs').readFileSync(0,'utf8').trim().split(/\\s+/);console.log('');" }
+    ]
+  }
+
+
+]

@@ -1,0 +1,982 @@
+[
+  {
+    "title": "What is the default value of a boolean variable in Java?",
+    "description": "Identify the default value assigned to a boolean instance variable.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "Data Types"],
+    "options": [
+      { "optionText": "true", "isCorrect": false },
+      { "optionText": "false", "isCorrect": true },
+      { "optionText": "null", "isCorrect": false },
+      { "optionText": "0", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which data type is used to create a variable that should store text?",
+    "description": "Select the correct data type for storing string values.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "Data Types"],
+    "options": [
+      { "optionText": "String", "isCorrect": true },
+      { "optionText": "Char", "isCorrect": false },
+      { "optionText": "Txt", "isCorrect": false },
+      { "optionText": "float", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "How do you insert COMMENTS in Java code?",
+    "description": "Choose the correct syntax for single-line comments.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "Syntax"],
+    "options": [
+      { "optionText": "# This is a comment", "isCorrect": false },
+      { "optionText": "// This is a comment", "isCorrect": true },
+      { "optionText": "/* This is a comment", "isCorrect": false },
+      { "optionText": "", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which method must be implemented by all Java threads?",
+    "description": "Identify the entry point method for a thread.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Multithreading", "Core Java"],
+    "options": [
+      { "optionText": "start()", "isCorrect": false },
+      { "optionText": "run()", "isCorrect": true },
+      { "optionText": "execute()", "isCorrect": false },
+      { "optionText": "init()", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the size of double in Java?",
+    "description": "Select the memory size allocated for a double variable.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Data Types", "Memory"],
+    "options": [
+      { "optionText": "32 bits", "isCorrect": false },
+      { "optionText": "64 bits", "isCorrect": true },
+      { "optionText": "16 bits", "isCorrect": false },
+      { "optionText": "8 bits", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which operator is used to compare two values?",
+    "description": "Choose the relational operator for equality.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Operators", "Java Basics"],
+    "options": [
+      { "optionText": "=", "isCorrect": false },
+      { "optionText": "==", "isCorrect": true },
+      { "optionText": "<>", "isCorrect": false },
+      { "optionText": "><", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which exception is thrown when dividing by zero?",
+    "description": "Identify the runtime exception for arithmetic errors.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Exception Handling", "Core Java"],
+    "options": [
+      { "optionText": "NullPointerException", "isCorrect": false },
+      { "optionText": "ArithmeticException", "isCorrect": true },
+      { "optionText": "NumberFormatException", "isCorrect": false },
+      { "optionText": "IndexOutOfBoundsException", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which keyword is used to create a class?",
+    "description": "Select the reserved word for class definition.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "OOP"],
+    "options": [
+      { "optionText": "class", "isCorrect": true },
+      { "optionText": "Class", "isCorrect": false },
+      { "optionText": "struct", "isCorrect": false },
+      { "optionText": "className", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the return type of the hashCode() method?",
+    "description": "Identify the data type returned by the Object class's hashCode method.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Core Java", "Object Class"],
+    "options": [
+      { "optionText": "long", "isCorrect": false },
+      { "optionText": "int", "isCorrect": true },
+      { "optionText": "Object", "isCorrect": false },
+      { "optionText": "void", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which collection cannot contain duplicate elements?",
+    "description": "Choose the interface that enforces uniqueness.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Collections", "Data Structures"],
+    "options": [
+      { "optionText": "List", "isCorrect": false },
+      { "optionText": "Set", "isCorrect": true },
+      { "optionText": "Map", "isCorrect": false },
+      { "optionText": "Queue", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which keyword is used to access the parent class?",
+    "description": "Select the keyword used to refer to the superclass.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["OOP", "Inheritance"],
+    "options": [
+      { "optionText": "this", "isCorrect": false },
+      { "optionText": "super", "isCorrect": true },
+      { "optionText": "parent", "isCorrect": false },
+      { "optionText": "extends", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the correct way to declare a main method?",
+    "description": "Identify the standard signature of the main method.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "Syntax"],
+    "options": [
+      { "optionText": "public void main(String[] args)", "isCorrect": false },
+      { "optionText": "public static void main(String[] args)", "isCorrect": true },
+      { "optionText": "private static void main(String[] args)", "isCorrect": false },
+      { "optionText": "void main(String args[])", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which class is the superclass of all classes in Java?",
+    "description": "Identify the root class in the Java class hierarchy.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Core Java", "Inheritance"],
+    "options": [
+      { "optionText": "String", "isCorrect": false },
+      { "optionText": "Object", "isCorrect": true },
+      { "optionText": "Class", "isCorrect": false },
+      { "optionText": "System", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which of these is NOT a primitive data type?",
+    "description": "Determine which option is a reference type.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Data Types", "Java Basics"],
+    "options": [
+      { "optionText": "int", "isCorrect": false },
+      { "optionText": "String", "isCorrect": true },
+      { "optionText": "boolean", "isCorrect": false },
+      { "optionText": "byte", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which package is imported by default in every Java program?",
+    "description": "Identify the package that requires no explicit import.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Java Basics", "Packages"],
+    "options": [
+      { "optionText": "java.util", "isCorrect": false },
+      { "optionText": "java.lang", "isCorrect": true },
+      { "optionText": "java.io", "isCorrect": false },
+      { "optionText": "java.awt", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What does the 'static' keyword mean?",
+    "description": "Choose the correct behavior of static members.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Core Java", "Modifiers"],
+    "options": [
+      { "optionText": "Variable value cannot be changed", "isCorrect": false },
+      { "optionText": "Belongs to the class, not instance", "isCorrect": true },
+      { "optionText": "Method cannot be overridden", "isCorrect": false },
+      { "optionText": "Class cannot be instantiated", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which interface does ArrayList implement?",
+    "description": "Select the primary interface implemented by ArrayList.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Collections", "Interfaces"],
+    "options": [
+      { "optionText": "List", "isCorrect": true },
+      { "optionText": "Set", "isCorrect": false },
+      { "optionText": "Map", "isCorrect": false },
+      { "optionText": "Queue", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the purpose of the 'finally' block?",
+    "description": "Identify the role of the finally block in exception handling.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Exception Handling", "Flow Control"],
+    "options": [
+      { "optionText": "To handle exceptions", "isCorrect": false },
+      { "optionText": "To execute code regardless of exceptions", "isCorrect": true },
+      { "optionText": "To throw custom exceptions", "isCorrect": false },
+      { "optionText": "To stop program execution", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which method converts a String to an integer?",
+    "description": "Choose the correct parsing method.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Data Manipulation", "Wrapper Classes"],
+    "options": [
+      { "optionText": "Integer.parseInt()", "isCorrect": true },
+      { "optionText": "Integer.toString()", "isCorrect": false },
+      { "optionText": "String.toInt()", "isCorrect": false },
+      { "optionText": "Integer.valueOf()", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Can an abstract class have constructors?",
+    "description": "Determine the validity of constructors in abstract classes.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["OOP", "Abstract Classes"],
+    "options": [
+      { "optionText": "Yes", "isCorrect": true },
+      { "optionText": "No", "isCorrect": false },
+      { "optionText": "Only private constructors", "isCorrect": false },
+      { "optionText": "Only if it has no abstract methods", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which Java version introduced Lambda Expressions?",
+    "description": "Select the version where functional programming features were added.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Java 8", "Features"],
+    "options": [
+      { "optionText": "Java 5", "isCorrect": false },
+      { "optionText": "Java 7", "isCorrect": false },
+      { "optionText": "Java 8", "isCorrect": true },
+      { "optionText": "Java 11", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the implicit return type of a constructor?",
+    "description": "Identify what a constructor effectively returns.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["OOP", "Constructors"],
+    "options": [
+      { "optionText": "void", "isCorrect": false },
+      { "optionText": "The class type itself", "isCorrect": true },
+      { "optionText": "int", "isCorrect": false },
+      { "optionText": "null", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which keyword prevents method overriding?",
+    "description": "Choose the keyword that locks a method implementation.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Modifiers", "Polymorphism"],
+    "options": [
+      { "optionText": "static", "isCorrect": false },
+      { "optionText": "final", "isCorrect": true },
+      { "optionText": "abstract", "isCorrect": false },
+      { "optionText": "private", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the marker interface?",
+    "description": "Define the characteristic of a marker interface.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Interfaces", "Advanced Java"],
+    "options": [
+      { "optionText": "An interface with one method", "isCorrect": false },
+      { "optionText": "An interface with no methods", "isCorrect": true },
+      { "optionText": "An interface with default methods", "isCorrect": false },
+      { "optionText": "An interface for serialization", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which Map implementation maintains insertion order?",
+    "description": "Select the Map that preserves the order of added keys.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Collections", "Maps"],
+    "options": [
+      { "optionText": "HashMap", "isCorrect": false },
+      { "optionText": "TreeMap", "isCorrect": false },
+      { "optionText": "LinkedHashMap", "isCorrect": true },
+      { "optionText": "Hashtable", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What does the 'synchronized' keyword do?",
+    "description": "Identify the function of synchronization in Java.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Multithreading", "Concurrency"],
+    "options": [
+      { "optionText": "Allows multiple threads to access a method", "isCorrect": false },
+      { "optionText": "Prevents concurrent access to a block/method", "isCorrect": true },
+      { "optionText": "Increases thread priority", "isCorrect": false },
+      { "optionText": "Starts a new thread", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which stream operation is a terminal operation?",
+    "description": "Choose the operation that triggers the stream pipeline processing.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Java 8", "Streams"],
+    "options": [
+      { "optionText": "map", "isCorrect": false },
+      { "optionText": "filter", "isCorrect": false },
+      { "optionText": "forEach", "isCorrect": true },
+      { "optionText": "sorted", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the use of 'volatile' keyword?",
+    "description": "Select the correct behavior of volatile variables.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Multithreading", "Memory Model"],
+    "options": [
+      { "optionText": "Makes variable immutable", "isCorrect": false },
+      { "optionText": "Ensures visibility of changes across threads", "isCorrect": true },
+      { "optionText": "Makes methods synchronized", "isCorrect": false },
+      { "optionText": "Prevents garbage collection", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which class is thread-safe?",
+    "description": "Identify the legacy thread-safe collection.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Collections", "Concurrency"],
+    "options": [
+      { "optionText": "ArrayList", "isCorrect": false },
+      { "optionText": "Vector", "isCorrect": true },
+      { "optionText": "LinkedList", "isCorrect": false },
+      { "optionText": "HashSet", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the default value of an object reference?",
+    "description": "Determine the default initialization value for references.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "Data Types"],
+    "options": [
+      { "optionText": "0", "isCorrect": false },
+      { "optionText": "undefined", "isCorrect": false },
+      { "optionText": "null", "isCorrect": true },
+      { "optionText": "false", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which statement is true about Garbage Collection?",
+    "description": "Select the correct fact regarding JVM memory management.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["JVM", "Memory Management"],
+    "options": [
+      { "optionText": "It can be forced using System.gc()", "isCorrect": false },
+      { "optionText": "It is automatic and managed by JVM", "isCorrect": true },
+      { "optionText": "It frees stack memory", "isCorrect": false },
+      { "optionText": "It guarantees immediate cleanup", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which exception is checked?",
+    "description": "Identify the exception that must be handled at compile time.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Exception Handling", "Core Java"],
+    "options": [
+      { "optionText": "NullPointerException", "isCorrect": false },
+      { "optionText": "IOException", "isCorrect": true },
+      { "optionText": "ArithmeticException", "isCorrect": false },
+      { "optionText": "IllegalArgumentException", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the purpose of the default constructor?",
+    "description": "Identify the role of the no-argument constructor.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["OOP", "Constructors"],
+    "options": [
+      { "optionText": "To initialize objects with default values", "isCorrect": true },
+      { "optionText": "To delete objects", "isCorrect": false },
+      { "optionText": "To call static methods", "isCorrect": false },
+      { "optionText": "To implement interfaces", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which feature allows a subclass to provide a specific implementation of a method?",
+    "description": "Select the OOP concept described.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["OOP", "Polymorphism"],
+    "options": [
+      { "optionText": "Overloading", "isCorrect": false },
+      { "optionText": "Overriding", "isCorrect": true },
+      { "optionText": "Encapsulation", "isCorrect": false },
+      { "optionText": "Abstraction", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What does String immutability mean?",
+    "description": "Choose the correct implication of immutable Strings.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Core Java", "Strings"],
+    "options": [
+      { "optionText": "The String value can be changed", "isCorrect": false },
+      { "optionText": "A new object is created when modified", "isCorrect": true },
+      { "optionText": "Strings cannot be deleted", "isCorrect": false },
+      { "optionText": "Strings are stored in Stack", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which operator is used for concatenation of strings?",
+    "description": "Identify the string concatenation symbol.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Strings", "Operators"],
+    "options": [
+      { "optionText": "&", "isCorrect": false },
+      { "optionText": "+", "isCorrect": true },
+      { "optionText": ".", "isCorrect": false },
+      { "optionText": "#", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which functional interface accepts one argument and produces a result?",
+    "description": "Identify the correct functional interface from java.util.function.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Java 8", "Functional Interfaces"],
+    "options": [
+      { "optionText": "Supplier", "isCorrect": false },
+      { "optionText": "Consumer", "isCorrect": false },
+      { "optionText": "Function", "isCorrect": true },
+      { "optionText": "Predicate", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the size of char in Java?",
+    "description": "Select the memory size for a char type.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Data Types", "Java Basics"],
+    "options": [
+      { "optionText": "8 bits", "isCorrect": false },
+      { "optionText": "16 bits", "isCorrect": true },
+      { "optionText": "32 bits", "isCorrect": false },
+      { "optionText": "4 bits", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which design pattern is used by java.lang.Runtime?",
+    "description": "Identify the creational pattern used in Runtime class.",
+    "difficulty": "HARD",
+    "points": 20,
+    "timeLimit": 60,
+    "tags": ["Design Patterns", "Advanced Java"],
+    "options": [
+      { "optionText": "Factory", "isCorrect": false },
+      { "optionText": "Singleton", "isCorrect": true },
+      { "optionText": "Prototype", "isCorrect": false },
+      { "optionText": "Observer", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which method is used to start a thread execution?",
+    "description": "Choose the method to trigger run().",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Multithreading", "Core Java"],
+    "options": [
+      { "optionText": "run()", "isCorrect": false },
+      { "optionText": "start()", "isCorrect": true },
+      { "optionText": "init()", "isCorrect": false },
+      { "optionText": "main()", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which collection allows null keys?",
+    "description": "Select the Map implementation that supports null keys.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Collections", "Maps"],
+    "options": [
+      { "optionText": "Hashtable", "isCorrect": false },
+      { "optionText": "TreeMap", "isCorrect": false },
+      { "optionText": "HashMap", "isCorrect": true },
+      { "optionText": "ConcurrentHashMap", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the purpose of the 'transient' keyword?",
+    "description": "Identify the effect of transient on variable serialization.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Serialization", "Keywords"],
+    "options": [
+      { "optionText": "Prevents variable modification", "isCorrect": false },
+      { "optionText": "Prevents serialization of the variable", "isCorrect": true },
+      { "optionText": "Makes variable thread-safe", "isCorrect": false },
+      { "optionText": "Allows serialization of static variables", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which of the following is a valid identifier?",
+    "description": "Choose the syntactically correct variable name.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "Syntax"],
+    "options": [
+      { "optionText": "1variable", "isCorrect": false },
+      { "optionText": "_variable", "isCorrect": true },
+      { "optionText": "variable-name", "isCorrect": false },
+      { "optionText": "class", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which exception is thrown if an array is accessed with an illegal index?",
+    "description": "Identify the array-related runtime exception.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Exception Handling", "Arrays"],
+    "options": [
+      { "optionText": "IndexOutOfBoundsException", "isCorrect": false },
+      { "optionText": "ArrayIndexOutOfBoundsException", "isCorrect": true },
+      { "optionText": "NullPointerException", "isCorrect": false },
+      { "optionText": "ArrayStoreException", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the parent class of all Exceptions?",
+    "description": "Identify the superclass for exception hierarchy.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Exception Handling", "Inheritance"],
+    "options": [
+      { "optionText": "Throwable", "isCorrect": true },
+      { "optionText": "Exception", "isCorrect": false },
+      { "optionText": "Error", "isCorrect": false },
+      { "optionText": "Object", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which loop is guaranteed to execute at least once?",
+    "description": "Select the exit-controlled loop.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Flow Control", "Loops"],
+    "options": [
+      { "optionText": "for", "isCorrect": false },
+      { "optionText": "while", "isCorrect": false },
+      { "optionText": "do-while", "isCorrect": true },
+      { "optionText": "foreach", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which implementation of Set is sorted?",
+    "description": "Identify the Set that maintains natural ordering.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Collections", "Sets"],
+    "options": [
+      { "optionText": "HashSet", "isCorrect": false },
+      { "optionText": "LinkedHashSet", "isCorrect": false },
+      { "optionText": "TreeSet", "isCorrect": true },
+      { "optionText": "AbstractSet", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is method overloading?",
+    "description": "Define the concept of overloading.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["OOP", "Polymorphism"],
+    "options": [
+      { "optionText": "Methods with same name and same signature in different classes", "isCorrect": false },
+      { "optionText": "Methods with same name but different signatures in same class", "isCorrect": true },
+      { "optionText": "Methods with same name and signature in subclass", "isCorrect": false },
+      { "optionText": "Hiding a method", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which package contains the Scanner class?",
+    "description": "Select the utility package for Scanner.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "IO"],
+    "options": [
+      { "optionText": "java.io", "isCorrect": false },
+      { "optionText": "java.util", "isCorrect": true },
+      { "optionText": "java.lang", "isCorrect": false },
+      { "optionText": "java.net", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the use of 'this()'?",
+    "description": "Choose the function of constructor chaining.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["OOP", "Constructors"],
+    "options": [
+      { "optionText": "Calls current class method", "isCorrect": false },
+      { "optionText": "Calls current class constructor", "isCorrect": true },
+      { "optionText": "Calls parent class constructor", "isCorrect": false },
+      { "optionText": "Refers to current object instance", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which of these is a valid main method signature?",
+    "description": "Identify the valid varargs syntax for main.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Syntax", "Java Basics"],
+    "options": [
+      { "optionText": "public static void main(String... args)", "isCorrect": true },
+      { "optionText": "public void main(String args)", "isCorrect": false },
+      { "optionText": "static public void main()", "isCorrect": false },
+      { "optionText": "public static int main(String[] args)", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which concept allows hiding internal details?",
+    "description": "Select the term for data hiding.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["OOP", "Encapsulation"],
+    "options": [
+      { "optionText": "Polymorphism", "isCorrect": false },
+      { "optionText": "Encapsulation", "isCorrect": true },
+      { "optionText": "Inheritance", "isCorrect": false },
+      { "optionText": "Abstraction", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What happens if a try block throws an exception but there is no catch?",
+    "description": "Predict the flow if finally is present.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Exception Handling", "Flow Control"],
+    "options": [
+      { "optionText": "Program crashes immediately", "isCorrect": false },
+      { "optionText": "Finally block executes, then exception propagates", "isCorrect": true },
+      { "optionText": "Exception is ignored", "isCorrect": false },
+      { "optionText": "Finally block is skipped", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which method is used to find the length of an array?",
+    "description": "Differentiate between length property and method.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Arrays", "Syntax"],
+    "options": [
+      { "optionText": "length()", "isCorrect": false },
+      { "optionText": "size()", "isCorrect": false },
+      { "optionText": "length", "isCorrect": true },
+      { "optionText": "getSize()", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What does JDK stand for?",
+    "description": "Expand the acronym JDK.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "Environment"],
+    "options": [
+      { "optionText": "Java Development Kit", "isCorrect": true },
+      { "optionText": "Java Deployment Kit", "isCorrect": false },
+      { "optionText": "Java Debugging Kit", "isCorrect": false },
+      { "optionText": "Java Document Kit", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which stream method removes duplicates?",
+    "description": "Select the intermediate operation for uniqueness.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Java 8", "Streams"],
+    "options": [
+      { "optionText": "unique()", "isCorrect": false },
+      { "optionText": "distinct()", "isCorrect": true },
+      { "optionText": "filter()", "isCorrect": false },
+      { "optionText": "removeDuplicates()", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the default value of an int array element?",
+    "description": "Determine initialization of array elements.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Arrays", "Data Types"],
+    "options": [
+      { "optionText": "null", "isCorrect": false },
+      { "optionText": "0", "isCorrect": true },
+      { "optionText": "undefined", "isCorrect": false },
+      { "optionText": "-1", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which keyword is used to define an interface?",
+    "description": "Select the keyword for interface creation.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["OOP", "Interfaces"],
+    "options": [
+      { "optionText": "class", "isCorrect": false },
+      { "optionText": "interface", "isCorrect": true },
+      { "optionText": "implements", "isCorrect": false },
+      { "optionText": "abstract", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the output of 5 >> 1?",
+    "description": "Calculate the result of bitwise right shift.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Operators", "Bitwise"],
+    "options": [
+      { "optionText": "10", "isCorrect": false },
+      { "optionText": "2", "isCorrect": true },
+      { "optionText": "3", "isCorrect": false },
+      { "optionText": "5", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which feature was introduced in Java 14?",
+    "description": "Identify the modern Java feature.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Java Versions", "Features"],
+    "options": [
+      { "optionText": "Lambda Expressions", "isCorrect": false },
+      { "optionText": "Records", "isCorrect": true },
+      { "optionText": "Modules", "isCorrect": false },
+      { "optionText": "Generics", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What does SQL stand for?",
+    "description": "Expand the acronym SQL.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Database", "General"],
+    "options": [
+      { "optionText": "Structured Query Language", "isCorrect": true },
+      { "optionText": "Simple Query Language", "isCorrect": false },
+      { "optionText": "Structured Question List", "isCorrect": false },
+      { "optionText": "Standard Query Logic", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which annotation is used to override a method?",
+    "description": "Select the correct annotation for method overriding.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Annotations", "OOP"],
+    "options": [
+      { "optionText": "@Overload", "isCorrect": false },
+      { "optionText": "@Override", "isCorrect": true },
+      { "optionText": "@Super", "isCorrect": false },
+      { "optionText": "@Inherit", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the range of a byte in Java?",
+    "description": "Identify the numerical range of byte type.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Data Types", "Java Basics"],
+    "options": [
+      { "optionText": "-128 to 127", "isCorrect": true },
+      { "optionText": "-256 to 255", "isCorrect": false },
+      { "optionText": "0 to 255", "isCorrect": false },
+      { "optionText": "-32768 to 32767", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which exception is thrown when parsing an invalid number string?",
+    "description": "Identify the exception for format errors.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Exception Handling", "String"],
+    "options": [
+      { "optionText": "IOException", "isCorrect": false },
+      { "optionText": "NumberFormatException", "isCorrect": true },
+      { "optionText": "ClassCastException", "isCorrect": false },
+      { "optionText": "ArithmeticException", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is auto-boxing?",
+    "description": "Define the concept of auto-boxing.",
+    "difficulty": "MEDIUM",
+    "points": 10,
+    "timeLimit": 45,
+    "tags": ["Java Basics", "Wrapper Classes"],
+    "options": [
+      { "optionText": "Converting primitive to object", "isCorrect": true },
+      { "optionText": "Converting object to primitive", "isCorrect": false },
+      { "optionText": "Creating a box object", "isCorrect": false },
+      { "optionText": "Automatic memory management", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which method stops a thread?",
+    "description": "Identify the safe way to stop a thread (deprecated vs logic).",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Multithreading", "API"],
+    "options": [
+      { "optionText": "stop()", "isCorrect": false },
+      { "optionText": "Using a flag variable", "isCorrect": true },
+      { "optionText": "kill()", "isCorrect": false },
+      { "optionText": "terminate()", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which file extension is used for compiled Java files?",
+    "description": "Select the extension of bytecode files.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Java Basics", "Compilation"],
+    "options": [
+      { "optionText": ".java", "isCorrect": false },
+      { "optionText": ".class", "isCorrect": true },
+      { "optionText": ".jar", "isCorrect": false },
+      { "optionText": ".exe", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which interface represents a key-value pair?",
+    "description": "Identify the internal interface for map entries.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Collections", "Maps"],
+    "options": [
+      { "optionText": "Map.Pair", "isCorrect": false },
+      { "optionText": "Map.Entry", "isCorrect": true },
+      { "optionText": "KeyValue", "isCorrect": false },
+      { "optionText": "EntrySet", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "Which method of Object class waits for a thread?",
+    "description": "Select the method for thread communication.",
+    "difficulty": "HARD",
+    "points": 15,
+    "timeLimit": 60,
+    "tags": ["Multithreading", "Object Class"],
+    "options": [
+      { "optionText": "sleep()", "isCorrect": false },
+      { "optionText": "wait()", "isCorrect": true },
+      { "optionText": "yield()", "isCorrect": false },
+      { "optionText": "join()", "isCorrect": false }
+    ]
+  },
+  {
+    "title": "What is the purpose of 'break' statement?",
+    "description": "Choose the function of the break keyword.",
+    "difficulty": "EASY",
+    "points": 5,
+    "timeLimit": 30,
+    "tags": ["Flow Control", "Keywords"],
+    "options": [
+      { "optionText": "To skip an iteration", "isCorrect": false },
+      { "optionText": "To exit a loop or switch", "isCorrect": true },
+      { "optionText": "To stop program", "isCorrect": false },
+      { "optionText": "To throw exception", "isCorrect": false }
+    ]
+  }
+]
